@@ -1,0 +1,437 @@
+{
+  "categories": {
+    "vrt": "VRT (Vlaamse openbare omroep)",
+    "dpg": "VTM / DPG Media",
+    "play": "Play (SBS / Play Media)",
+    "rtbf": "RTBF (Franstalige openbare omroep)",
+    "rtl": "RTL Belgium",
+    "regionaal": "Regionale zenders",
+    "overig": "Overige / thematische zenders"
+  },
+  "channels": [
+    {
+      "id": "vrt1",
+      "name": "VRT 1",
+      "category": "vrt",
+      "logo": "https://i.imgur.com/wPAGbNb.png",
+      "watch_url": "https://www.vrt.be/vrtmax/kanalen/vrt1/",
+      "iptv_id": "VRT1.be",
+      "epg_id": "VRT.1.be",
+      "language": "nl"
+    },
+    {
+      "id": "canvas",
+      "name": "VRT Canvas",
+      "category": "vrt",
+      "logo": "https://i.imgur.com/nMQE1jh.png",
+      "watch_url": "https://www.vrt.be/vrtmax/kanalen/vrt-canvas/",
+      "iptv_id": "VRTCanvas.be",
+      "epg_id": "VRT.Canvas.HD.be",
+      "language": "nl"
+    },
+    {
+      "id": "ketnet",
+      "name": "Ketnet",
+      "category": "vrt",
+      "logo": "https://i.imgur.com/Q4vI453.png",
+      "watch_url": "https://www.vrt.be/vrtmax/kanalen/ketnet/",
+      "iptv_id": "Ketnet.be",
+      "epg_id": "Ketnet.be",
+      "language": "nl"
+    },
+    {
+      "id": "ketnet-jr",
+      "name": "Ketnet Junior",
+      "category": "vrt",
+      "logo": "https://i.imgur.com/eDYaphB.png",
+      "watch_url": "https://www.vrt.be/vrtmax/kanalen/ketnet-junior/",
+      "iptv_id": "KetnetJunior.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "sporza",
+      "name": "Sporza",
+      "category": "vrt",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sporza_logo_2018.svg/512px-Sporza_logo_2018.svg.png",
+      "watch_url": "https://sporza.be/nl/live/",
+      "iptv_id": "Sporza.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "vtm",
+      "name": "VTM",
+      "category": "dpg",
+      "logo": "https://i.imgur.com/N3nwyDd.png",
+      "watch_url": "https://vtmgo.be/vtm-go/live/vtm",
+      "iptv_id": "VTM.be",
+      "epg_id": "VTM.HD.be",
+      "language": "nl"
+    },
+    {
+      "id": "vtm2",
+      "name": "VTM 2",
+      "category": "dpg",
+      "logo": "https://i.imgur.com/kYBHMlw.png",
+      "watch_url": "https://vtmgo.be/vtm-go/live/vtm2",
+      "iptv_id": "VTM2.be",
+      "epg_id": "VTM.2.be",
+      "language": "nl"
+    },
+    {
+      "id": "vtm3",
+      "name": "VTM 3",
+      "category": "dpg",
+      "logo": "https://i.imgur.com/vY6892N.png",
+      "watch_url": "https://vtmgo.be/vtm-go/live/vtm3",
+      "iptv_id": "VTM3.be",
+      "epg_id": "VTM.3.be",
+      "language": "nl"
+    },
+    {
+      "id": "vtm4",
+      "name": "VTM 4",
+      "category": "dpg",
+      "logo": "https://i.imgur.com/vabFMLq.png",
+      "watch_url": "https://vtmgo.be/vtm-go/live/vtm4",
+      "iptv_id": "VTM4.be",
+      "epg_id": "VTM.4.be",
+      "language": "nl"
+    },
+    {
+      "id": "vtm-gold",
+      "name": "VTM Gold",
+      "category": "dpg",
+      "logo": "https://i.imgur.com/HF49zV1.png",
+      "watch_url": "https://vtmgo.be/vtm-go/live/vtmgold",
+      "iptv_id": "VTMGold.be",
+      "epg_id": "VTM.GOLD.be",
+      "language": "nl"
+    },
+    {
+      "id": "play",
+      "name": "Play",
+      "category": "play",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Play4_2021.svg/960px-Play4_2021.svg.png",
+      "watch_url": "https://www.goplay.be/live/play",
+      "iptv_id": "Play4.be",
+      "epg_id": "Play.be",
+      "language": "nl",
+      "note": "Voorheen Play4"
+    },
+    {
+      "id": "play-fictie",
+      "name": "Play Fictie",
+      "category": "play",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Play5_2021.svg/960px-Play5_2021.svg.png",
+      "watch_url": "https://www.goplay.be/live/play-fictie",
+      "iptv_id": "Play5.be",
+      "epg_id": "Play.Fictie.be",
+      "language": "nl",
+      "note": "Voorheen Play5"
+    },
+    {
+      "id": "play-actie",
+      "name": "Play Actie",
+      "category": "play",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Play6_2021.svg/960px-Play6_2021.svg.png",
+      "watch_url": "https://www.goplay.be/live/play-actie",
+      "iptv_id": "Play6.be",
+      "epg_id": "Play.Actie.be",
+      "language": "nl",
+      "note": "Voorheen Play6"
+    },
+    {
+      "id": "play-reality",
+      "name": "Play Reality",
+      "category": "play",
+      "logo": "https://i.imgur.com/BSnof2S.png",
+      "watch_url": "https://www.goplay.be/live/play-reality",
+      "iptv_id": "Play7.be",
+      "epg_id": "Play.Reality.be",
+      "language": "nl",
+      "note": "Voorheen Play7"
+    },
+    {
+      "id": "play-crime",
+      "name": "Play Crime",
+      "category": "play",
+      "logo": "https://i.imgur.com/hPh8tRq.png",
+      "watch_url": "https://www.goplay.be/live/play-crime",
+      "iptv_id": "PlayCrime.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "la-une",
+      "name": "La Une",
+      "category": "rtbf",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/La_Une_logo_2018.svg/512px-La_Une_logo_2018.svg.png",
+      "watch_url": "https://auvio.rtbf.be/direct/la-une",
+      "iptv_id": "LaUne.be",
+      "epg_id": "La.Une.HD.be",
+      "language": "fr"
+    },
+    {
+      "id": "tipik",
+      "name": "Tipik",
+      "category": "rtbf",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Tipik_logo_2018.svg/512px-Tipik_logo_2018.svg.png",
+      "watch_url": "https://auvio.rtbf.be/direct/tipik",
+      "iptv_id": "Tipik.be",
+      "epg_id": "Tipik.be",
+      "language": "fr"
+    },
+    {
+      "id": "la-trois",
+      "name": "La Trois",
+      "category": "rtbf",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/La_Trois_logo_2018.svg/512px-La_Trois_logo_2018.svg.png",
+      "watch_url": "https://auvio.rtbf.be/direct/la-trois",
+      "iptv_id": "LaTrois.be",
+      "epg_id": "La.trois.be",
+      "language": "fr"
+    },
+    {
+      "id": "rtl-tvi",
+      "name": "RTL TVI",
+      "category": "rtl",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/RTL-TVI_logo_2021.svg/512px-RTL-TVI_logo_2021.svg.png",
+      "watch_url": "https://www.rtlplay.be/tvi/direct",
+      "iptv_id": "RTLTVI.be",
+      "epg_id": "RTL.TVI.HD.be",
+      "language": "fr"
+    },
+    {
+      "id": "club-rtl",
+      "name": "Club RTL",
+      "category": "rtl",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Club_RTL_logo_2021.svg/512px-Club_RTL_logo_2021.svg.png",
+      "watch_url": "https://www.rtlplay.be/club/direct",
+      "iptv_id": "RTLClub.be",
+      "epg_id": "RTL.Club.be",
+      "language": "fr"
+    },
+    {
+      "id": "plug-rtl",
+      "name": "Plug RTL",
+      "category": "rtl",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Plug_RTL_logo_2021.svg/512px-Plug_RTL_logo_2021.svg.png",
+      "watch_url": "https://www.rtlplay.be/plug/direct",
+      "iptv_id": "RTLPlug.be",
+      "epg_id": "RTL.Plug.be",
+      "language": "fr"
+    },
+    {
+      "id": "atv",
+      "name": "ATV",
+      "category": "regionaal",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/ATV_Belgium_logo.svg/960px-ATV_Belgium_logo.svg.png",
+      "watch_url": "https://atv.be/live",
+      "iptv_id": "ATV.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "avs",
+      "name": "AVS",
+      "category": "regionaal",
+      "logo": "https://avs.be/public/transforms/import/_1200x630_crop_center-center_82_none_ns/AVS-logo.jpg",
+      "watch_url": "https://www.avs.be/live",
+      "iptv_id": "AVS.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "focus-wtv",
+      "name": "Focus-WTV",
+      "category": "regionaal",
+      "logo": "https://i.imgur.com/dvZS1Ns.png",
+      "watch_url": "https://www.focus-wtv.be/live",
+      "iptv_id": "FocusTV.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "robtv",
+      "name": "ROB TV",
+      "category": "regionaal",
+      "logo": "https://i.imgur.com/HHDUnow.png",
+      "watch_url": "https://www.rtv.be/leuven",
+      "iptv_id": "ROBTV.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "rtv-kempen",
+      "name": "RTV (Kempen)",
+      "category": "regionaal",
+      "logo": "https://i.imgur.com/eaGNzwB.png",
+      "watch_url": "https://rtv.be/regios/kempen",
+      "iptv_id": "RTVKempen.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "tv-limburg",
+      "name": "TV Limburg",
+      "category": "regionaal",
+      "logo": "https://i.imgur.com/UMnXonD.png",
+      "watch_url": "https://www.tvl.be/live",
+      "iptv_id": "TVLimburg.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "bruzz",
+      "name": "BRUZZ",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.bruzz.be/livestream",
+      "iptv_id": "Bruzz.be",
+      "epg_id": null,
+      "language": "nl/fr"
+    },
+    {
+      "id": "bx1",
+      "name": "BX1",
+      "category": "regionaal",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_BX1.svg/512px-Logo_BX1.svg.png",
+      "watch_url": "https://bx1.be/direct/",
+      "iptv_id": "BX1.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "tv-lux",
+      "name": "TV Lux",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.tvlux.be/",
+      "iptv_id": "TVLux.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "notele",
+      "name": "Notélé",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.notele.be/direct",
+      "iptv_id": "Notele.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "telemb",
+      "name": "Télé MB",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.telemb.be/",
+      "iptv_id": "TeleMB.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "telesambre",
+      "name": "Télésambre",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.telesambre.be/direct",
+      "iptv_id": "Telesambre.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "vedia",
+      "name": "Vedia",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.vedia.be/",
+      "iptv_id": "Vedia.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "canal-zoom",
+      "name": "Canal Zoom",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.canalzoom.be/",
+      "iptv_id": "CanalZoom.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "matele",
+      "name": "Matélé",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "http://www.matele.be/direct",
+      "iptv_id": "Matele.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "actv",
+      "name": "ACTV (Antenne Centre)",
+      "category": "regionaal",
+      "logo": "",
+      "watch_url": "https://www.antennecentre.tv/direct",
+      "iptv_id": "ACTV.be",
+      "epg_id": null,
+      "language": "fr"
+    },
+    {
+      "id": "ab3",
+      "name": "AB3",
+      "category": "overig",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/AB3_2025.svg",
+      "watch_url": "https://www.ab3.be/",
+      "iptv_id": "AB3.be",
+      "epg_id": "AB3.be",
+      "language": "nl"
+    },
+    {
+      "id": "abxplore",
+      "name": "ABXplore",
+      "category": "overig",
+      "logo": "https://i.imgur.com/Z7bCdz9.png",
+      "watch_url": "https://www.abxplore.be/",
+      "iptv_id": "ABXplore.be",
+      "epg_id": "ABXPLORE.be",
+      "language": "nl"
+    },
+    {
+      "id": "njam",
+      "name": "Njam!",
+      "category": "overig",
+      "logo": "https://i.imgur.com/Cmku7NH.png",
+      "watch_url": "https://www.njam.tv/",
+      "iptv_id": "Njam.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "hln-live",
+      "name": "HLN Live",
+      "category": "overig",
+      "logo": "https://i.ibb.co/zbCrZG9/hq-hln.png",
+      "watch_url": "https://www.hln.be/live",
+      "iptv_id": "HLNLive.be",
+      "epg_id": null,
+      "language": "nl"
+    },
+    {
+      "id": "ln24",
+      "name": "LN24",
+      "category": "overig",
+      "logo": "",
+      "watch_url": "https://www.ln24.be/direct",
+      "iptv_id": "LN24.be",
+      "epg_id": null,
+      "language": "fr"
+    }
+  ]
+}

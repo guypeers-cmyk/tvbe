@@ -300,7 +300,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_BX1.svg/512px-Logo_BX1.svg.png",
       "watch_url": "https://bx1.be/direct/",
       "iptv_id": "BX1.be",
-      "epg_id": null,
+      "epg_id": "BX1.be",
       "language": "fr"
     },
     {
@@ -310,7 +310,7 @@
       "logo": "",
       "watch_url": "https://www.tvlux.be/",
       "iptv_id": "TVLux.be",
-      "epg_id": null,
+      "epg_id": "TV.Lux.be",
       "language": "fr"
     },
     {
@@ -350,7 +350,7 @@
       "logo": "",
       "watch_url": "https://www.vedia.be/",
       "iptv_id": "Vedia.be",
-      "epg_id": null,
+      "epg_id": "VEDIA.be",
       "language": "fr"
     },
     {
@@ -360,7 +360,7 @@
       "logo": "",
       "watch_url": "https://www.canalzoom.be/",
       "iptv_id": "CanalZoom.be",
-      "epg_id": null,
+      "epg_id": "Canal.Zoom.be",
       "language": "fr"
     },
     {
@@ -380,7 +380,7 @@
       "logo": "",
       "watch_url": "https://www.antennecentre.tv/direct",
       "iptv_id": "ACTV.be",
-      "epg_id": null,
+      "epg_id": "ACTV.be",
       "language": "fr"
     },
     {
@@ -430,7 +430,7 @@
       "logo": "",
       "watch_url": "https://www.ln24.be/direct",
       "iptv_id": "LN24.be",
-      "epg_id": null,
+      "epg_id": "LN24.be",
       "language": "fr"
     }
   ]

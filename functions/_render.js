@@ -255,6 +255,28 @@ function renderTileMarkup(ch, catId) {
         </li>`;
 }
 
+// De 3 grote Belgische omroepgroepen, getoond in het uitgelichte paneel
+// bovenaan de pagina (VRT, VTM/DPG Media, Play/SBS).
+const TOP3_CATEGORIES = ["vrt", "dpg", "play"];
+
+function renderTop3Panel(channelsByCategory) {
+  const top3Channels = TOP3_CATEGORIES.flatMap((catId) =>
+    (channelsByCategory[catId] || []).map((ch) => ({ ch, catId }))
+  );
+  if (!top3Channels.length) return "";
+  const tiles = top3Channels.map(({ ch, catId }) => renderTileMarkup(ch, catId)).join("\n");
+  return `  <section class="top3-panel" aria-labelledby="top3-heading">
+    <h2 class="top3-title" id="top3-heading">
+      <span class="top3-badge" aria-hidden="true">🇧🇪</span>
+      Belgische tv-gids — de 3 grote omroepen
+      <span class="cat-count" aria-hidden="true">(${top3Channels.length})</span>
+    </h2>
+    <ul class="tile-grid" role="list">
+${tiles}
+    </ul>
+  </section>`;
+}
+
 function renderCategorySections(channelsByCategory) {
   const sections = [];
   for (const [catId, catLabel] of Object.entries(CATEGORIES)) {
@@ -497,6 +519,20 @@ function applyFilters(q, cat) {
   const sections = document.querySelectorAll('.cat-section');
   let anyVisible = false;
   let visibleCount = 0;
+
+  const top3Panel = document.querySelector('.top3-panel');
+  if (top3Panel) {
+    const showPanel = (cat === 'all');
+    let panelHasVisible = false;
+    top3Panel.querySelectorAll('.tile').forEach(card => {
+      const nameMatches = card.dataset.name.includes(q);
+      const visible = showPanel && nameMatches;
+      card.style.display = visible ? '' : 'none';
+      if (visible) panelHasVisible = true;
+    });
+    top3Panel.style.display = (showPanel && panelHasVisible) ? '' : 'none';
+  }
+
   sections.forEach(sec => {
     const secCat = sec.dataset.cat;
     const catMatches = (cat === 'all' || cat === '__favorites' || cat === secCat);
@@ -526,7 +562,7 @@ function applyFilters(q, cat) {
 }
 
 (function () {
-  const liveCards = document.querySelectorAll('.tag-live').length;
+  const liveCards = document.querySelectorAll('.cat-section .tag-live').length;
   document.getElementById('statLive').textContent = liveCards;
 })();
 </script>`;
@@ -607,6 +643,8 @@ export function renderIndexPage({ origin, openChannelId }) {
       <div class="stat-label">Categorieën</div>
     </div>
   </div>
+
+${renderTop3Panel(channelsByCategory)}
 
   <div id="channelRoot">
 ${renderCategorySections(channelsByCategory)}

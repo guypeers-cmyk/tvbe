@@ -110,8 +110,8 @@ function renderHead({ title, description, canonicalUrl, ogImage, structuredData 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#4f46e5">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0d14">
 
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeAttr(description)}">
@@ -267,7 +267,12 @@ function renderTop3Panel(channelsByCategory) {
   const tiles = top3Channels.map(({ ch, catId }) => renderTileMarkup(ch, catId)).join("\n");
   return `  <section class="top3-panel" aria-labelledby="top3-heading">
     <h2 class="top3-title" id="top3-heading">
-      <span class="top3-badge" aria-hidden="true">🇧🇪</span>
+      <span class="top3-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2 3 6.5v5c0 5 3.8 8.9 9 10.5 5.2-1.6 9-5.5 9-10.5v-5L12 2Z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+      </span>
       Belgische tv-gids — de 3 grote omroepen
       <span class="cat-count" aria-hidden="true">(${top3Channels.length})</span>
     </h2>
@@ -432,6 +437,38 @@ document.querySelectorAll('.tile').forEach(card => {
   });
 });
 
+(function () {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isCoarse = window.matchMedia('(pointer: coarse)').matches;
+
+  document.querySelectorAll('.tile-grid').forEach(grid => {
+    Array.from(grid.children).forEach((tile, i) => {
+      tile.style.setProperty('--i', i % 24);
+    });
+  });
+
+  if (prefersReduced || isCoarse) return;
+
+  const MAX_TILT = 7;
+  document.querySelectorAll('.tile').forEach(tile => {
+    tile.addEventListener('mousemove', (e) => {
+      const rect = tile.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width;
+      const py = (e.clientY - rect.top) / rect.height;
+      const rx = (0.5 - py) * MAX_TILT;
+      const ry = (px - 0.5) * MAX_TILT;
+      tile.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+      tile.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+      tile.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
+      tile.style.setProperty('--my', (py * 100).toFixed(1) + '%');
+    });
+    tile.addEventListener('mouseleave', () => {
+      tile.style.setProperty('--rx', '0deg');
+      tile.style.setProperty('--ry', '0deg');
+    });
+  });
+})();
+
 if (OPEN_ON_LOAD) {
   openChannel(OPEN_ON_LOAD);
 }
@@ -593,7 +630,14 @@ export function renderIndexPage({ origin, openChannelId }) {
   <div class="header-inner">
     <h1>
       <a href="/" aria-label="Belgische Live TV — terug naar overzicht">
-        <span class="brand-badge" aria-hidden="true">📺</span>
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="5" width="19" height="13" rx="2.5"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 18v3"></path>
+            <path d="M10.2 8.2 14.5 11l-4.3 2.8Z" fill="white" stroke="none"></path>
+          </svg>
+        </span>
         <span>Belgische Live<span class="hl">TV</span></span>
       </a>
     </h1>
